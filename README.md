@@ -12,7 +12,16 @@ Una vez que el paquete tiene asignado su trasporte se carga el valor de distanci
 Si es necesario cargar otro paquete o salir de la carga, el usuario podrá seleccionar la bifurcación dentro del estado “¿CARGAR OTRO PAQUETE?”.
 Así mismo, dentro del estado “SALIR” se elegirá volver al primer estado o salir del programa.  
 
+
+
 ### Diagrama:
 
 ![./recursos/Maquina de estados.jpg](https://github.com/Marcos-Alcat/Maquina-de-Estados/blob/master/recursos/Maquina%20de%20estados.jpg)
 
+
+ - __P__: Lectura de peso.
+ - __Pmax__: Peso de referencia.
+ - __V__:  Lectura de volumen.
+ - __VL__: Volumen cota inferior.
+ - __Vp__: Volumen cota superior.
+ - __dist__: carga de distancia por usuario. 
