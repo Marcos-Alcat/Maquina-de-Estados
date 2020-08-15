@@ -14,3 +14,5 @@ Así mismo, dentro del estado “SALIR” se elegirá volver al primer estado o 
 
 ### Diagrama:
 
+![./recursos/Maquina de estados.jpg](https://github.com/Marcos-Alcat/Maquina-de-Estados/blob/master/recursos/Maquina%20de%20estados.jpg)
+
