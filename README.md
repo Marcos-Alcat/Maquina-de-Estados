@@ -6,7 +6,7 @@ Mi sistema representa un gestor de paquetería, el deposito cuenta con 3 categor
 
 Inicialmente se consulta al usuario si desea iniciar la clasificación de un nuevo paquete o imprimir el listado de los transportes (en caso de no haber ningún paquete cargado se indicará con una leyenda al usuario).  
 
-La clasificación inicia considerando el peso y contrastándolo con un valor de referencia "Pmax", el próximo parámetro a considerar es el volumen que tendra dos valores de referencia "Vp" y "VL", según estos se definirá la categoría del transporte. 
+La clasificación inicia considerando el peso y contrastándolo con un valor de referencia "Pmax", el próximo parámetro a considerar es el volumen que tendrá dos valores de referencia "Vp" y "VL", según estos se definirá la categoría del transporte. 
 Una vez que el paquete tiene asignado su trasporte se carga el valor de distancia a recorrer y se calcula el costo del viaje. 
 
 
