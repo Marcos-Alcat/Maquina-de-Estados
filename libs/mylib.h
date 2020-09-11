@@ -28,6 +28,7 @@ typedef struct {
 paquete_t inicio(void);                  //seteo de valores iniciales.   
 paquete_t leerArchivoConf(char*);        //lectura y extracción de datos de archivo config.conf
 float calculoDeCosto(float);             //se calcula el costo del viaje, basados en el costo por KM según tipo de transporte y distancia a recorrer. 
+float cargarDato(char*);                 //verifica valores cargados. 
 estados_t funClasificar(paquete_t*);     //estado clasificar.
 estados_t funDistanciaTL(paquete_t*);    //estado transporte ligero.
 estados_t funDistanciaTSP(paquete_t*);   //estado transporte semi-pesado.
