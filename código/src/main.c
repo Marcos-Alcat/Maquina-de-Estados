@@ -1,6 +1,6 @@
 #include "../libs/mylib.h"
 #include "gestor.c"  //se incluyó el archivo ".c" debido a problemas con el compilador.  
-#include "../src/funLeerArchivoConf.c"  //se incluyó el archivo ".c" debido a problemas con el compilador. 
+#include "../src/funLeerArchivoConf.c" 
 
 int main(void){
  estados_t estados;
