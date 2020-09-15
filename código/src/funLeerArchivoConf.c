@@ -9,14 +9,15 @@ paquete_t leerArchivoConf(char* nombreDeArchivo){
     char cadena[40],*clave,*valor;
     char vars[][40]={"Pmax","VL","Vp","costL", "costSP", "costP"};
     float num;
-
+    printf("%s\n",nombreDeArchivo);
     if ((archivo = fopen (nombreDeArchivo,"rt")) == NULL){
 		printf ("Error al abrir archivo configuracion: %s \n",nombreDeArchivo);
         exit (-1); //para salir del programa.
 	}else{
 		fgets(cadena,40,archivo);
                if (feof(archivo)) {
-            return;
+            //return 0;
+            exit (-1); //para salir del programa.
         }
 
 		do {
@@ -29,22 +30,22 @@ paquete_t leerArchivoConf(char* nombreDeArchivo){
 					if (strcmp(clave,vars[i]) == 0){
                         num = atof(valor);
 						switch(i){
-                            case 0:
+                            case PESO_MAX:
                                 configInicioArchivo.Pmax = num;
                                 break;
-                            case 1:
+                            case VOLUMEN_LIGERO:
                                 configInicioArchivo.VL = num;
                                 break;
-                            case 2:
+                            case VOLUMEN_PESADO:
                                 configInicioArchivo.Vp = num;
                                 break;
-                            case 3:
+                            case COSTO_LIGERO:
                                 configInicioArchivo.costL = num;
                                 break;
-                            case 4:
+                            case COSTO_SEMI_PESADO:
                                 configInicioArchivo.costSP = num;
                                 break;
-                            case 5:
+                            case COSTO_PESADO:
                                 configInicioArchivo.costP = num;
                                 break;                                                                                                
 						}

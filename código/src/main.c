@@ -1,16 +1,15 @@
 #include "../libs/mylib.h"
-#include "gestor.c"  //se incluyó el archivo ".c" debido a problemas con el compilador.  
-#include "../src/funLeerArchivoConf.c" 
+
 
 int main(void){
+    
  estados_t estados;
  paquete_t paquete;
- estados_t (*fsm[])(paquete_t) = {funClasificar, funDistanciaTL, funDistanciaTSP, funDistanciaTP};
-
- paquete = inicio();
+  paquete = inicio();
  estados = CLASIFICAR;
+ estados_t (*fsm[])(paquete_t*) = {funClasificar, funDistanciaTL, funDistanciaTSP, funDistanciaTP};
 
- while(1) estados = (*fsm[estados])(paquete);
+ while(1) estados = (*fsm[estados])(&paquete);
 
  return 0;
 }

@@ -12,6 +12,15 @@ typedef enum {
   TRANS_PESADO,
 }estados_t;
 
+typedef enum {
+  PESO_MAX,
+  VOLUMEN_LIGERO,
+  VOLUMEN_PESADO,
+  COSTO_LIGERO,
+  COSTO_SEMI_PESADO,
+  COSTO_PESADO
+}opcConf_t;
+
 typedef struct {
  float peso;
  float volumen;

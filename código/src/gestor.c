@@ -35,6 +35,8 @@ estados_t funClasificar(paquete_t* paquete){
         if ((paquete->peso > paquete->Pmax) || (paquete->volumen >= paquete->Vp)){
           return TRANS_PESADO;
         }
+
+       exit(EXIT_FAILURE);
 }
 
 
@@ -67,7 +69,6 @@ return CLASIFICAR;
 
  //función para calcular costo del envió, recibe el costo por KM según el tipo de transporte y retorna el costo.
  float calculoDeCosto(float costoKM){  
-   float distancia = 0;
    float calcDeCosto=0;
    calcDeCosto = cargarDato("Distancia: ")*costoKM;
    return calcDeCosto;
@@ -85,5 +86,4 @@ return CLASIFICAR;
     } ;
     return dato;
  }
-
 
